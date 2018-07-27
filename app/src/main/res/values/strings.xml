@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Do Not</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="bestscore">NEW Best: </string>
+    <string name="classic">Classic</string>
+    <string name="contactus">Contact Us</string>
+    <string name="cont">Continue?</string>
+    <string name="expert">Expert</string>
+    <string name="home">Home</string>
+    <string name="moreapps">More Apps</string>
+    <string name="reply">Reply</string>
+    <string name="rateapp">Rate App</string>
+    <string name="settings">Settings</string>
+    <string name="shareapp">Share App</string>
+    <string name="share">Share</string>
+    <string name="share_subject">Check out my score on Classic Arrow</string>
+    <string name="score">Score: </string>
+    <string name="stars">STARS </string>
+    <string name="stars50">50 STARS </string>
+    <string name="stars100">100 STARS </string>
+    <string name="stars500">500 STARS </string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tutorial">Tutorial</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-5011464080435742/5070526112</string>
+
+    <array name="color_array">
+        <item>@color/light_red</item>
+        <item>@color/light_green</item>
+    </array>
+
+    <string-array name="direction_array">
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_right</item>
+        <item>@drawable/arrow_up</item>
+        <item>@drawable/arrow_down</item>
+    </string-array>
+    <string name="title_activity_splash">Classic Arrow</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="title_activity_purchase">PurchaseActivity</string>
+
+    <!--In app purchase! -->
+    <string name="inapp_id">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAka9cpYILrAvHs7Ff0xOCAmtVsRhKlRI5nPozM/OKw3WnlHBFQVVmuCpXt6W8MZsuIMpV1qreF7CuYqFLp8QSgY/7iWfMp8WZSBWrmlHLBwSoJ9RZvgbEGdP8h7RKQY3pTWqqM+mZ1blKKzj871J1NZCdVfO7Q2yjpc4v057nTKDgJsuExYbKqxRLgA92VnfmwH4ec2cmXjWKcoZb/Q4rU/fQqrZ8DeFQCfFGRXOvl/ps+wcDqbVKTBWJYB7sE92NOgEiMInz2iNaaHD9/uyhlIncM/DG/nwdPHRrH5xGyI/FSuCvB+Jj/BNY/TH755uaOI6zh7LEiNrsdiDDNThBwwIDAQAB</string>
+
+</resources>

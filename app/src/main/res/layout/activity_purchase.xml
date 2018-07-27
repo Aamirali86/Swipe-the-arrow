@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.techytec.swipethearrow.PurchaseActivity">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="44sp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/line"
+        android:layout_alignRight="@+id/line"
+        android:textColor="@color/light_red"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="@string/stars" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/total_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="25sp"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/stars"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:src="@drawable/star"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/line">
+
+        <TextView
+            android:id="@+id/premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/horizontal_line"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="Premium Purchase\n(Ad free version)"/>
+
+        <TextView
+            android:id="@+id/silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/horizontal_line"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:layout_below="@+id/premium"
+            android:textSize="18sp"
+            android:text="Silver Purchase\n(Get 50 stars)"/>
+
+        <TextView
+            android:id="@+id/platinum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/horizontal_line"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/silver"
+            android:textSize="18sp"
+            android:text="Platinum Purchase\n(Get 100 stars)"/>
+
+        <TextView
+            android:id="@+id/gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/horizontal_line"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/platinum"
+            android:textSize="18sp"
+            android:text="Gold Purchase\n(Get 500 stars)"/>
+
+        <View
+            android:id="@+id/horizontal_line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/permium_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/horizontal_line"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="$ 0.99"/>
+
+        <Button
+            android:id="@+id/premium_buy"
+            android:layout_width="50dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Buy"
+            android:background="@color/light_green"
+            android:layout_toRightOf="@+id/permium_amount"/>
+
+        <TextView
+            android:id="@+id/silver_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/silver"
+            android:layout_alignLeft="@+id/horizontal_line"
+            android:layout_below="@+id/permium_amount"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="$ 0.99"/>
+
+        <Button
+            android:id="@+id/silver_buy"
+            android:layout_width="50dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:text="Buy"
+            android:layout_alignBaseline="@+id/silver_amount"
+            android:layout_below="@+id/permium_amount"
+            android:background="@color/light_green"
+            android:layout_toRightOf="@+id/silver_amount"/>
+
+        <TextView
+            android:id="@+id/platinum_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/horizontal_line"
+            android:layout_alignBaseline="@+id/platinum"
+            android:layout_below="@+id/silver_amount"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="$ 1.99"/>
+
+        <Button
+            android:id="@+id/platinum_buy"
+            android:layout_width="50dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:text="Buy"
+            android:layout_alignBaseline="@+id/platinum_amount"
+            android:layout_below="@+id/silver_amount"
+            android:background="@color/light_green"
+            android:layout_toRightOf="@+id/platinum_amount"/>
+
+        <TextView
+            android:id="@+id/gold_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gold"
+            android:layout_alignLeft="@+id/horizontal_line"
+            android:layout_below="@+id/platinum_amount"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="$ 2.99"/>
+
+        <Button
+            android:id="@+id/gold_buy"
+            android:layout_width="50dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Buy"
+            android:layout_alignBaseline="@+id/gold_amount"
+            android:layout_below="@+id/platinum_amount"
+            android:background="@color/light_green"
+            android:layout_toRightOf="@+id/gold_amount"/>
+    </RelativeLayout>
+
+</RelativeLayout>

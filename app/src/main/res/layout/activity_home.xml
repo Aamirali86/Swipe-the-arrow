@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.techytec.swipethearrow.HomeActivity">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_margin="25dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/score" />
+
+    <TextView
+        android:id="@+id/bestscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/score"
+        android:layout_margin="10dp"
+        android:textColor="@color/light_green"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/bestscore" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:src="@drawable/icon"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:layout_below="@id/fakeView">
+
+        <ImageButton
+            android:id="@+id/classic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@null"
+            android:src="@drawable/btn_classic" />
+
+        <ImageButton
+            android:id="@+id/expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classic"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@null"
+            android:src="@drawable/btn_expert" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expert"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:src="@drawable/btn_home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:src="@drawable/shopping_cart"/>
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cart"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/setting"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
